@@ -73,7 +73,7 @@ function remove_unused_widgets( $widgets_manager ) {
 		// 'read-more',
 	];
 
-	foreach ( $widgets_list as $widget ) {
+	foreach ( $widgets_to_unregister as $widget ) {
 		$widgets_manager->unregister( $widget );
 	}
 
